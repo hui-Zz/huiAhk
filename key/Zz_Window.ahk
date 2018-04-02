@@ -19,6 +19,8 @@ PrintScreen::return
 LCtrl & CapsLock::SendInput,^+{Tab} ;~激活上个标签
 LShift & CapsLock::SendInput,{Delete} ;<--删除
 CapsLock & Tab::SendInput,{BackSpace} ;<--退格删除
+!1::SendInput,^#{Left}
+!2::SendInput,^#{Right}
 LAlt::
 	KeyWait,LAlt
 	KeyWait,LAlt,d,t0.2

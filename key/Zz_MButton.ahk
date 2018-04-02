@@ -32,7 +32,7 @@ GroupAdd,maxApp,ahk_exe League of Legends.exe
 		}
 		KeyWait,MButton,,t0.2 ; 双击判断，等待第二次按键
 		if(errorlevel<>1){
-			KeyWait,MButton,d,t0.2 ; 判断第二次按键是否是鼠标中键
+			KeyWait,MButton,d,t0.1 ; 判断第二次按键是否是鼠标中键
 			if(errorlevel=0){
 				WinSet,AlwaysOnTop,Toggle,ahk_id %Zz_MouseWin% ; 【切换窗口置顶】
 			}
